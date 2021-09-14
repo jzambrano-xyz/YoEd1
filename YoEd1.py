@@ -20,13 +20,13 @@ chart_data = pd.DataFrame({
    'Alumno': [20, 30, 30, 40, 40, 40],
    'Familia': [60, 50, 40, 40, 30, 30]
 
-   }, index=['Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre', 'Enero'])
+   }, index=["Mes anterior 1", 'Mes anterior 2', 'Mes anterior 3', 'Mes presente', 'Tendencia próximo mes', 'Tendencia próximo mes 2'])
 
 st.line_chart(chart_data)
 
 
 st.write("""
-Acompaña el desarrollo de sus **Inteligencias**
+Acompaña el desarrollo de sus **Inteligencias múltiples**
 """)
 
 chart_data2 = pd.DataFrame({
@@ -40,9 +40,32 @@ chart_data2 = pd.DataFrame({
    'Corporal Kinestésica': [5, 10, 15, 15, 10, 10],
    'Lingüística Verbal': [10, 10, 15, 15, 20, 10]
 
-   }, index=['Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre', 'Enero'])
+   }, index=["Mes anterior 1", 'Mes anterior 2', 'Mes anterior 3', 'Mes presente', 'Tendencia próximo mes', 'Tendencia próximo mes 2'])
 
 st.line_chart(chart_data2)
+
+st.write("""
+Acompaña el desarrollo de sus **Inteligencias emocionales**
+""")
+
+chart_data3 = pd.DataFrame({
+
+   'Competencias Emocionales': [5, 15, 10, 15, 10, 10],
+   'Desarrollar la inteligencia emocional': [20, 15, 5, 10, 15, 20],
+   'Dinámica de las emociones en los niños': [10, 5, 10, 15, 5, 15],
+   'En la escuela': [20, 20, 15, 10, 15, 10],
+   'Expresión de los sentimientos': [10, 5, 10, 15, 5, 15],
+   'Expresión de los sentimientos y emociones en la familia y en la pareja': [5, 10, 15, 15, 10, 10],
+   'Modelo esquemático': [20, 15, 15, 15, 10, 10],
+   'Modelo por áreas': [10, 10, 15, 10, 15, 15],
+   'Objetivos de la educación emocional': [5, 10, 15, 15, 10, 10],
+   'Pilares de la educación': [10, 10, 15, 10, 15, 15],
+   'Sistema inmunológico': [20, 20, 15, 10, 15, 10],
+   'Valores educativos  ': [10, 10, 15, 15, 20, 10]
+
+   }, index=["Mes anterior 1", 'Mes anterior 2', 'Mes anterior 3', 'Mes presente', 'Tendencia próximo mes', 'Tendencia próximo mes 2'])
+
+st.line_chart(chart_data3)
 
 st.subheader('Panel de valoración')
 
